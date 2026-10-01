@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 265 40% 97%;
+  --foreground: 265 35% 15%;
+  --muted: 265 60% 91%;
+  --muted-foreground: 265 15% 38%;
+  --primary: 265 75% 55%;
+  --primary-dark: 265 60% 40%;
+}
+.dark {
+  --background: 266 22% 14%;
+  --foreground: 270 40% 96%;
+  --muted: 266 28% 22%;
+  --muted-foreground: 268 18% 75%;
+  --primary: 266 100% 74%;
+  --primary-dark: 266 60% 56%;
+}
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body { @apply bg-background text-foreground font-sans antialiased; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
