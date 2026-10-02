@@ -1,7 +1,8 @@
 // Edit this file to personalise the whole site.
 export const site = {
   name: "Murtaza Rafi",
-  role: "Fullstack Developer",
+  role: ["Fullstack Developer"],
+  //  "AI/ML Engineer"],
   intro:
     "I build efficient REST APIs, PostgreSQL and Supabase. Replace this with two or three sentences about you.",
   cvUrl: "/cv.pdf",
@@ -31,7 +32,16 @@ export const projects: Project[] = [
   {
     title: "Project two: short description",
     role: "AI/ML engineer",
-    description: "Describe the goal, your contribution and the outcome in plain language.",
+    description:
+      "Describe the goal, your contribution and the outcome in plain language.",
     tags: ["Python", "TensorFlow", "Scikit-learn", "Pandas", "NumPy"],
+  },
+  {
+    title: "KafféParty",
+    role: "Frontend developer",
+    description:
+      "My first frontend website built with Bootstrap, with simple yet elegant design.",
+    tags: ["Bootstrap", "HTML5", "CSS", "JavaScript"],
+    image: "/Kafeparty-project.png",
   },
 ];

@@ -8,8 +8,8 @@ export default function Projects() {
       <div className="space-y-20">
         {projects.map((p) => (
           <article key={p.title} className="grid items-center gap-10 md:grid-cols-2">
-            <div className="relative grid aspect-[16/10] place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-[#dccdea] to-[#b79ee0] text-2xl font-bold text-[#2a1c45]">
-              {p.image ? <Image src={p.image} alt={p.title} fill className="object-cover" /> : "Project image"}
+            <div className="relative grid aspect-[16/11] place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-[#dccdea] to-[#b79ee0] text-2xl font-bold text-[#2a1c45]">
+              {p.image ? <Image src={p.image} alt={`${p.title} screenshot`} fill sizes="(min-width: 1024px) 480px, (min-width: 768px) 45vw, 100vw" className="object-fill" />: "Project image"}
             </div>
             <div>
               <h3 className="mb-4 text-3xl font-bold leading-tight">{p.title}</h3>
