@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { Button } from "@/components/ui/button";
 import { site } from "@/data/site";
+import Image from "next/image";
 
 export default function Hero() {
   const roleRef = useRef<HTMLSpanElement>(null);
@@ -40,9 +41,9 @@ export default function Hero() {
           <Button asChild variant="outline"><a href={site.cvUrl} download>Download CV</a></Button>
         </div>
       </div>
-      {/* Replace with <Image src="/hero.png" .../> */}
-      <div ref={orbRef} className="mx-auto grid aspect-square w-[min(380px,80vw)] place-items-center rounded-full bg-[#121014]">
-        <span className="text-8xl" aria-hidden>🚀</span>
+      {/* Replace with  */}
+      <div ref={orbRef} className="mx-auto grid aspect-square w-[min(380px,80vw)] place-items-center overflow-hidden rounded-full bg-[#121014]">
+        <Image src="/murtaza.png" alt="Hero image" fill sizes="(min-width: 1024px) 480px, (min-width: 768px) 45vw, 100vw" className="object-cover" />
       </div>
     </section>
   );
