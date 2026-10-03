@@ -33,14 +33,16 @@ export default function Hero() {
           <br />
           <span ref={roleRef} className="text-primary" aria-label={site.role} />
         </h1>
-        <p className="mb-7 max-w-[62ch] text-lg">{site.intro}</p>
+        <p className="text-primary-light md:mr-10 dark:text-primary-dark sm:text-lg mb-4 md:mb-6 lg:text-xl">
+        {site.intro}
+        </p>
         <div className="flex flex-wrap gap-3">
           <Button asChild><a href="#contact">Hire Me</a></Button>
           <Button asChild variant="outline"><a href={site.cvUrl} download>Download CV</a></Button>
         </div>
       </div>
       {/* Replace with  */}
-      <div className="mx-auto relative grid aspect-square w-[min(380px,80vw)] place-items-center overflow-hidden rounded-full bg-[#121014]">
+      <div  className="mx-auto relative grid aspect-square w-[min(380px,80vw)] place-items-center overflow-hidden rounded-full bg-[#121014]">
         <Image src="/murtaza.png" alt="Hero image" fill sizes="(min-width: 1024px) 480px, (min-width: 768px) 45vw, 100vw" className="object-cover" />
       </div>
     </section>

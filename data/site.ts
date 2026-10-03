@@ -3,8 +3,9 @@ export const site = {
   name: "Murtaza Rafi",
   role: ["Fullstack Developer"],
   //  "AI/ML Engineer"],
-  intro:
-    "I build efficient REST APIs, PostgreSQL and Supabase. Replace this with two or three sentences about you.",
+  intro: [
+    "Fullstack Developer with 3 years of experience building business-critical application. Strong expertise in C#, .NET Core, MySQL and Azure, with modern frontend skills in TypeScript and Vue.js/React. Proven ability to deliver in Agile/Scrum teams and resolve complex production issues independently and collaboratively.",
+    , " Backed by a Master's in Engineering Mechanics from KTH, I'm now actively expanding into Python and AI/ML. Looking for roles as a Fullstack Developer or AI/ML Engineer where I can combine solid engineering practices with a growing focus on applied AI.",],
   cvUrl: "/cv.pdf",
   about: [
     "I care about building technology that makes life easier, fairer and more accessible for everyone.",

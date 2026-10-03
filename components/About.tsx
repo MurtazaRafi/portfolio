@@ -7,7 +7,7 @@ import { site } from "@/data/site";
 export default function About() {
   return (
     <section id="about" className="mx-auto max-w-6xl px-6 py-20">
-      <div className="grid items-center gap-12 md:grid-cols-[1fr_1.2fr]">
+      <div className="grid items-start gap-12 md:grid-cols-2">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -24,12 +24,39 @@ export default function About() {
         </motion.div>
 
         <div>
-          <h2 className="mb-6 text-3xl font-bold">About Me</h2>
-          <div className="space-y-4">
-            {site.about.map((p) => (
-              <p key={p}>{p}</p>
-            ))}
-          </div>
+          <h2 className="mb-6 text-center text-3xl font-bold">About Me</h2>
+           <p className="text-primary-light dark:text-primary-dark text-center md:text-justify lg:text-lg">
+            I care about building technology that's{" "}
+            <span className="font-semibold text-[#bb86fc]">
+              reliable and genuinely useful.
+            </span>{" "}
+            My journey started in{" "}
+            <span className="font-semibold text-[#bb86fc]">engineering</span> —
+            a Bachelor's and Master's from KTH — where I learned to think
+            analytically and solve problems methodically.
+            <br />
+            That led me into software development, where I found my place as a{" "}
+            <span className="font-semibold text-[#bb86fc]">
+              Fullstack Developer,
+            </span>{" "}
+            building business-critical application — owning systems end-to-end 
+            and working with the whole development life cycle.
+            <br />
+            Now I'm expanding into{" "}
+            <span className="font-semibold text-[#bb86fc]">
+              AI and Machine Learning,
+            </span>{" "}
+            because I believe software should be smarter, not just faster — and
+            I want to combine solid engineering with applied AI to build
+            features that actually bring value to people.
+            <br />
+            I'm driven by{" "}
+            <span className="font-semibold text-[#bb86fc]">
+              curiosity, continuous learning and problem-solving,
+            </span>{" "}
+            bringing the same focus to a software development and AI/ML
+            Engineering role.
+          </p>
         </div>
       </div>
     </section>
