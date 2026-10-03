@@ -6,7 +6,7 @@ import { site } from "@/data/site";
 
 export default function About() {
   return (
-    <section id="about" className="mx-auto max-w-6xl px-6 py-20">
+    <section id="about" className="text-white relative mx-auto max-w-6xl px-6 py-20">
       <div className="grid items-start gap-12 md:grid-cols-2">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}

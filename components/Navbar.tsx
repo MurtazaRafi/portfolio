@@ -22,18 +22,18 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed inset-x-0 top-0 z-50 flex items-center justify-between bg-background/85 px-6 py-4 backdrop-blur">
+    <nav className="fixed inset-x-0 top-0 z-50 flex items-center justify-between bg-background/85 px-6 py-4 pt-7 backdrop-blur">
       <a href="#top" aria-label="Home" className="text-3xl font-medium tracking-tighter text-primary">
         &lt;/&gt;
       </a>
-      <div className="flex gap-6 text-muted-foreground">
+      <div className="flex gap-6 text-2xl font-normal text-muted-foreground">
         {links.map((l) => (
           <a key={l} href={`#${l.toLowerCase()}`} className="hover:text-foreground">
             {l}
           </a>
         ))}
       </div>
-      <Button variant="outline" size="sm" onClick={toggle}>
+      <Button variant="outline" size="default" onClick={toggle}>
         {dark ? "Light" : "Dark"}
       </Button>
     </nav>
