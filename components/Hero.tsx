@@ -7,9 +7,8 @@ import Image from "next/image";
 
 export default function Hero() {
   const roleRef = useRef<HTMLSpanElement>(null);
-  const orbRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+   useEffect(() => {
     const el = roleRef.current;
     if (!el) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -22,7 +21,6 @@ export default function Hero() {
         n: site.role.length, duration: 1.4, ease: "none", delay: 0.3,
         onUpdate: () => { el.textContent = site.role.slice(0, Math.round(counter.n)); },
       });
-      gsap.to(orbRef.current, { y: -14, duration: 2.4, ease: "sine.inOut", yoyo: true, repeat: -1 });
     });
     return () => ctx.revert();
   }, []);
@@ -42,7 +40,7 @@ export default function Hero() {
         </div>
       </div>
       {/* Replace with  */}
-      <div ref={orbRef} className="mx-auto grid aspect-square w-[min(380px,80vw)] place-items-center overflow-hidden rounded-full bg-[#121014]">
+      <div className="mx-auto relative grid aspect-square w-[min(380px,80vw)] place-items-center overflow-hidden rounded-full bg-[#121014]">
         <Image src="/murtaza.png" alt="Hero image" fill sizes="(min-width: 1024px) 480px, (min-width: 768px) 45vw, 100vw" className="object-cover" />
       </div>
     </section>
