@@ -62,12 +62,12 @@ export default function Hero() {
    <section
       id="top"
       className="mx-auto flex w-full max-w-[1400px] flex-col items-center gap-10 px-8 pb-20 pt-32
-                 sm:px-10 md:flex-row md:gap-12 md:pt-36 lg:gap-20 lg:px-12
+                 sm:px-10 md:flex-row md:gap-12 md:px-16 md:pt-36 lg:gap-20 lg:px-12
                  min-[1800px]:max-w-[1700px] md:justify-center min-[2200px]:max-w-[2000px]"
     >
       {/* Text column: full width on mobile, takes 1.4 parts of the row from md up */}
       <div className="w-full min-w-0 md:flex-[1.2]">
-        <h1 className="mb-5 text-center text-4xl font-bold leading-tight sm:text-5xl md:text-left md:text-2xl lg:text-5xl xl:text-6xl min-[1800px]:text-7xl">
+        <h1 className="mb-5 text-center text-4xl font-bold leading-tight sm:text-5xl md:text-left md:text-l lg:text-5xl xl:text-6xl min-[1800px]:text-7xl">
           Hello, I am
           <br />
           <span className="sr-only">{site.role}</span>
