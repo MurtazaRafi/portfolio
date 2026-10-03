@@ -6,7 +6,7 @@ import { site } from "@/data/site";
 
 export default function About() {
   return (
-    <section id="about" className="text-white relative mx-auto max-w-6xl px-6 py-20">
+    <section id="about" className="text-foreground relative mx-auto max-w-6xl px-6 py-20">
       <div className="grid items-start gap-12 md:grid-cols-2">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
@@ -16,7 +16,7 @@ export default function About() {
         >
           <Image
             src="/about.jfif"
-            alt="Portrait of Murtaza"
+            alt="About image"
             fill
             sizes="(min-width: 768px) 45vw, 100vw"
             className="object-cover"
@@ -25,7 +25,7 @@ export default function About() {
 
         <div>
           <h2 className="mb-6 text-center text-3xl font-bold">About Me</h2>
-           <p className="text-primary-light dark:text-primary-dark text-center md:text-justify lg:text-lg">
+           <p className="text-foreground dark:text-primary-dark text-center md:text-justify lg:text-lg">
             I care about building technology that's{" "}
             <span className="font-semibold text-[#bb86fc]">
               reliable and genuinely useful.
