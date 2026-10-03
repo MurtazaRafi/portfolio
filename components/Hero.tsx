@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { Button } from "@/components/ui/button";
 import { site } from "@/data/site";
 import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
   const roleRef = useRef<HTMLSpanElement>(null);
@@ -31,7 +32,18 @@ export default function Hero() {
         <h1 className="mb-5 text-4xl font-bold leading-tight md:text-5xl">
           Hello, I am
           <br />
-          <span ref={roleRef} className="text-primary" aria-label={site.role} />
+          <span className="sr-only">{site.role}</span>
+          <span aria-hidden>
+            <TypeAnimation
+              sequence={["Murtaza Rafi", 1500, "Fullstack Developer", 1500, "AI/ML Engineer", 1500]}
+              wrapper="span"
+              speed={50}
+              deletionSpeed={60}
+              repeat={Infinity}
+              cursor
+              className="text-primary"
+            />
+          </span>
         </h1>
         <p className="text-primary-light md:mr-10 dark:text-primary-dark sm:text-lg mb-4 md:mb-6 lg:text-xl">
         {site.intro}
