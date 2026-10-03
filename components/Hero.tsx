@@ -71,7 +71,7 @@ export default function Hero() {
                  min-[1800px]:max-w-[1675px] md:justify-center min-[2100px]:max-w-[1800px]"
       >
         {/* Text column: full width on mobile, takes 1.4 parts of the row from md up */}
-        <div className="w-full min-w-0 md:flex-[1.2] flex flex-col items-center text-center md:items-start sm:text-left lg:max-w-[560px] xl:max-w-[600px] min-[1800px]:max-w-[700px]">
+        <div className="w-full max-w-[560px] min-w-0 md:flex-[1.2] flex flex-col items-center text-center md:items-start sm:text-left lg:max-w-[560px] xl:max-w-[600px] min-[1800px]:max-w-[700px]">
           <h1 className="mb-5 text-center text-4xl font-extrabold leading-tight sm:text-5xl md:text-left md:text-3xl lg:text-4xl xl:text-5xl min-[1800px]:text-6xl">
             Hello, I am
             <br />
