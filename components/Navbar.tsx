@@ -33,7 +33,7 @@ export default function Navbar() {
           </a>
         ))}
       </div>
-      <Button variant="outline" size="default" onClick={toggle}>
+      <Button size = "lg" variant="outline" onClick={toggle}>
         {dark ? "Light" : "Dark"}
       </Button>
     </nav>

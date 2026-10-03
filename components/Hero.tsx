@@ -27,9 +27,47 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="top" className="mx-auto grid max-w-6xl items-center gap-12 px-6 pb-20 pt-36 md:grid-cols-[1.2fr_1fr]">
-      <div>
-        <h1 className="mb-5 text-4xl font-bold leading-tight md:text-5xl">
+    // <section id="top" className="mx-auto grid max-w-[1400px] items-center gap-10 px-8 pb-20 pt-32 sm:px-10 md:grid-cols-[1.4fr_1fr] md:pt-36 lg:gap-20 lg:px-12
+    //          min-[1800px]:max-w-[1700px] min-[2200px]:max-w-[2000px]">
+    //   <div>
+    //     <h1 className="mb-5 text-4xl font-bold leading-tight sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+    //       Hello, I am
+    //       <br />
+    //       <span className="sr-only">{site.role}</span>
+    //       <span aria-hidden>
+    //         <TypeAnimation
+    //           sequence={["Murtaza Rafi", 1500, "Fullstack Developer", 1500, "AI/ML Engineer", 1500]}
+    //           wrapper="span"
+    //           speed={50}
+    //           deletionSpeed={60}
+    //           repeat={Infinity}
+    //           cursor
+    //           className="text-primary"
+    //         />
+    //       </span>
+    //     </h1>
+    //     <p className="mb-8 text-lg text-foreground md:text-xl lg:text-2xl">
+    //     {site.intro}
+    //     </p>
+    //     <div className="flex flex-wrap gap-3">
+    //       <Button size = "lg" asChild><a href="#contact">Hire Me</a></Button>
+    //       <Button size = "lg" asChild variant="outline"><a href={site.cvUrl} download>Download CV</a></Button>
+    //     </div>
+    //   </div>
+    //   {/* Replace with  */}
+    //   <div  className="mx-auto relative aspect-square w-[min(480px,80vw)] place-items-center overflow-hidden rounded-full bg-[#121014] min-[1800px]:w-[640px]">
+    //     <Image src="/murtaza.png" alt="Hero image" fill priority sizes="(min-width: 1024px) 480px, 80vw" className="object-cover" />
+    //   </div>
+    // </section>
+   <section
+      id="top"
+      className="mx-auto flex w-full max-w-[1400px] flex-col items-center gap-10 px-8 pb-20 pt-32
+                 sm:px-10 md:flex-row md:gap-12 md:pt-36 lg:gap-20 lg:px-12
+                 min-[1800px]:max-w-[1700px] md:justify-center min-[2200px]:max-w-[2000px]"
+    >
+      {/* Text column: full width on mobile, takes 1.4 parts of the row from md up */}
+      <div className="w-full min-w-0 md:flex-[1.2]">
+        <h1 className="mb-5 text-center text-4xl font-bold leading-tight sm:text-5xl md:text-left md:text-2xl lg:text-5xl xl:text-6xl min-[1800px]:text-7xl">
           Hello, I am
           <br />
           <span className="sr-only">{site.role}</span>
@@ -45,17 +83,27 @@ export default function Hero() {
             />
           </span>
         </h1>
-        <p className="text-primary-light md:mr-10 dark:text-primary-dark sm:text-lg mb-4 md:mb-6 lg:text-xl">
-        {site.intro}
+        <p className="mb-6 text-base text-foreground sm:text-md md:text-lg lg:text-xl min-[1800px]:text-3xl">
+          {site.intro}
         </p>
         <div className="flex flex-wrap gap-3">
-          <Button asChild><a href="#contact">Hire Me</a></Button>
-          <Button asChild variant="outline"><a href={site.cvUrl} download>Download CV</a></Button>
+          <Button asChild className="md:h-12 md:px-8 md:text-base"><a href="#contact">Hire Me</a></Button>
+          <Button asChild variant="outline" className="md:h-12 md:px-8 md:text-base"><a href={site.cvUrl} download>Download CV</a></Button>
         </div>
       </div>
-      {/* Replace with  */}
-      <div  className="mx-auto relative grid aspect-square w-[min(380px,80vw)] place-items-center overflow-hidden rounded-full bg-[#121014]">
-        <Image src="/murtaza.png" alt="Hero image" fill sizes="(min-width: 1024px) 480px, (min-width: 768px) 45vw, 100vw" className="object-cover" />
+
+      {/* Photo column: takes 1 part of the row from md up */}
+      <div className="flex w-full justify-center md:flex-1">
+        <div className="relative aspect-square w-[70vw] max-w-[560px] overflow-hidden rounded-full bg-[#121014] md:w-full min-[1800px]:max-w-[640px]">
+          <Image
+            src="/murtaza.png"
+            alt="Hero image"
+            fill
+            priority
+            sizes="(min-width: 1800px) 640px, (min-width: 1024px) 560px, 70vw"
+            className="object-cover"
+          />
+        </div>
       </div>
     </section>
   );

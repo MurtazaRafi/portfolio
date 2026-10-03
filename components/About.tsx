@@ -25,7 +25,7 @@ export default function About() {
 
         <div>
           <h2 className="mb-6 text-center text-3xl font-bold">About Me</h2>
-           <p className="text-foreground dark:text-primary-dark text-center md:text-justify lg:text-lg">
+           <p className="text-foreground text-center md:text-justify lg:text-lg">
             I care about building technology that's{" "}
             <span className="font-semibold text-[#bb86fc]">
               reliable and genuinely useful.
