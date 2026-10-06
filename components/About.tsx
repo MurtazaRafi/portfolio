@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <section id="about" className="text-foreground">
-      <div className="mx-auto flex w-full max-w-[1450px] flex-col items-center gap-10 px-8 py-20 sm:px-10 md:flex-row md:gap-12 md:px-16 lg:gap-24 lg:px-12">
+      <div className="mx-auto flex w-full max-w-[1400px] flex-col items-center gap-10 px-8 py-20 sm:px-10 md:flex-row md:gap-12 md:px-16 lg:gap-24 lg:px-12
+      min-[1800px]:max-w-[1675px] md:justify-center min-[2100px]:max-w-[1800px]">
         {/* Left half: picture centered, so it sits under the Hero text block */}
         <div className="flex w-full justify-center md:w-1/2">
           <motion.div
@@ -28,7 +29,7 @@ export default function About() {
           <div className="w-full min-w-0 max-w-[560px]">
             <h2 className="mb-5 text-center text-3xl font-extrabold sm:text-4xl">
               About Me
-            </h2>
+            </h2> 
             <p className="text-foreground text-center md:text-justify lg:text-lg">
               I care about building technology that's{" "}
               <span className="font-semibold text-[#bb86fc]">
@@ -68,4 +69,5 @@ export default function About() {
   );
 }
 
+// TODO 1: The about me picture and text not centered below the hero section on large screens 
 // TODO ta bort route för api:et och ha allt i front end, för statisk sida
